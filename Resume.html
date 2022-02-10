@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Tyler Manifold Resume</title>
+
+        <style type="text/css">
+            a {
+                text-decoration: none;
+                color: cornflowerblue;
+            }
+            
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #363636;
+                background-color: white;
+                width: 95%;
+                /* width: 8.5in; */
+                /* height: 11in; */
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 1.25em;
+            }
+
+            u {
+                text-decoration-color: grey;
+            }
+            body h2 {
+                text-align: center;
+                padding: unset;
+            }
+
+            .resume-section {
+                /* width: 90%; */
+                /* margin-left: auto; */
+                /* margin-right: auto; */
+                margin-top: 1em;
+                border: 1px solid lightgrey;
+                border-radius: 12px;
+                padding: 1em;
+            }
+
+            .resume-section h4 {
+                margin-top: 0em;
+                margin-bottom: 0em;
+                /* padding: unset; */
+            }
+
+            .resume-section ul li {
+                padding: 0.1em;
+            }
+
+            .resume-section ul {
+                margin-top: 0.25em;
+                padding-left: 2.5em;
+            }
+            
+            #resume-header {
+                text-align: center;
+                /* display: inline-block; */
+                /* width: 100%; */
+                border-bottom: 1px solid lightgrey;
+            }
+
+            #resume-header h1 {
+                display: inline-block;
+                text-align: center;
+                vertical-align: top;
+                font-size: 2.75em;
+                /* padding: unset; */
+                /* margin: unset; */
+                margin-bottom: 0.5em;
+                width: 50%;
+                /* line-height: 1em; */
+                /* border: 1px solid red; */
+                /* margin-left: auto; */
+                /* margin-right: auto; */
+            }
+            
+            #resume-header ul.info {
+                width: 24%;
+                list-style-type: none;
+                padding:unset;
+                display: inline-block;
+                vertical-align: top;
+                /* border: 1px solid red; */
+                /* margin-inline: 1em; */
+                /* writing-mode: horizontal-tb; */
+            }
+
+            #resume-header ul.info li {
+                /* display: inline; */
+                vertical-align: middle;
+                margin-right: 0px;
+
+                /* margin-block: 0.15em; */
+                /* border: 1px solid blue; */
+                /* margin-inline: 0.25em; */
+            }
+
+            ul.info#contact {
+                /* float:left; */
+                text-align: left;
+            }
+
+            ul.info#links {
+                /* float: right; */
+                text-align: right;
+            }
+
+            ul.info#links img {
+                margin-left: 0.5em;
+                margin-right: 0px;
+            }
+
+            .seperator {
+                border-style: solid;
+                width: 5%;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="resume">
+            <div id="resume-header">
+                <ul class="info" id="contact">
+                    <li>(317) 753-3369</li>
+                    <li>Greenwood, IN</li>
+                    <li><a href="mailto:tdmanifold@gmail.com">tdmanifold@gmail.com</a></li>
+                </ul>
+                <h1>Tyler Manifold</h1>
+                <ul class="info" id="links">
+                    <li><a href="https://tmanifold.github.io/resume" target="_blank" rel="noopener noreferrer">tmanifold.github.io/resume</a></li>
+                    <li><a href="https://www.github.com/tmanifold" target="_blank" rel="noopener noreferrer">tmanifold</a><img src="./img/GitHub-Mark-32px.png" width="24px" alt="GitHub"></li>
+                    <li><a href="https://www.linkedin.com/in/tyler-manifold" target="_blank" rel="noopener noreferrer">tyler-manifold</a><img src="./img/LI-In-Bug.png"  width="24px" alt="LinkedIn"/></li>
+                </ul>
+            </div>
+
+            <h2>Education & Skills</h2>
+            <div class="resume-section">
+                <b>Bachelor of Science in Computer Science | Minor in Mathematics</b> <span style="float:right;">Dec 2021</span>
+                
+                <p>Indiana University-Purdue University Indianapolis (IUPUI)</p>
+
+                <h4>Relevant Coursework</h4>
+                <p>
+                    Data Structures, Operating Systems, Computer Architecture, Discrete Computational Structures, Systems
+                    Programming, Internet of Things, Theory of Computation, 2D Game Design
+                </p>
+
+                <h4>Skills</h4>
+                <p>
+                    <u>Proficient</u>: Software development and debugging, Hardware and software troubleshooting, C/C++, Python, JavaScript, Linux Systems, Git<br>
+                    <br>
+                    <u>Learning</u>:  Docker, TypeScript, Rust, Go, WebAssembly
+                </p>
+            </div>
+
+            <h2>Academic Projects</h2>
+            <div class="resume-section">
+                <h4>Wind Turbine Damage Detection System - Capstone</h4>
+                <ul>
+                    <li>Worked in a team to develop a system capable of detecting damage to windmills.</li>
+                    <li>Used Python and machine learning to train classifiers for various damage types.</li>
+                    <li>Developed an asynchronous Python program to automate download of source images from a Google Cloud Platform bucket, and provide the images as input to the machine learning framework.</li>
+                    <li>Deployed the system on IUPUI High-Performance Compute clusters to leverage multi-processing.</li>
+                </ul>
+               
+                <h4>Network Enabled Camera - Internet of Things</h4>
+                <ul>
+                    <li>Worked with a teammate to design and develop a wireless security camera using a Raspberry Pi.</li>
+                    <li>Developed client and server applications in Python using the CoAP protocol plus websockets to facilitate communicate with the device.</li>
+                </ul>
+    
+                <h4>Game Engine - 2D Game Design</h4>
+                <ul>
+                    <li>Independently developed a 2D game engine using pure JavaScript and HTML5 canvas elements</li>
+                    <li>Implemented a 2D vector math library, collision models, movement and transformation methods, and scene management.</li>
+                </ul>
+                
+                <h4>SIC/XE Assembler - Systems Programming</h4>
+                <ul>
+                    <li>Worked in a team to developed most components of an assembler for the Simplified Instructional Computer with Extra Equipment (SIC/XE) using C++.</li>
+                    <li>Produced a program capable of parsing input from a file and assembling machine instructions according to SIC/XE specification.</li>
+                </ul>
+            </div>
+
+            <h2>Work History</h2>
+            <div class="resume-section">
+                <b>Advanced Repair Agent</b>&nbsp;&nbsp;Best Buy | Geek Squad <span style="float:right;">Oct 2015 - Present (Greenwood, IN)</span>
+                <br>
+                <ul>
+                    <li>
+                        Perform hardware and software services for client devices such as desktop PCs, laptops, and iPhones. Services include software troubleshooting and fixes, as well as hardware repairs.
+                    </li>
+                    <li>
+                        Use written communication skills to document repair notes by hand as well as internal service order
+                        management system.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
