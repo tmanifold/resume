@@ -28,9 +28,9 @@ h3 {
 	display: flex;
 	flex-flow: column nowrap;
 	gap: 16px;
-	width: 95%;
+	width: 98%;
 	padding: 1em;
-	min-width: 400px;
+	min-width: 300px;
 }
 
 #header-card {
