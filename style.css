@@ -28,6 +28,10 @@ h3 {
 	text-align: center;
 }
 
+hr {
+	width: 20vw;
+}
+
 .container {
 	display: flex;
 	flex-flow: column nowrap;
@@ -68,16 +72,39 @@ h3 {
 	text-align: right;
 }
 
-#skills-and-certs {
+#certs > .cert {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: start;
+	flex-flow: row nowrap;
+	align-items: center;
+	padding: 0.5rem;
+	padding-left: 0px;
+	padding-top: 0px;
 }
 
-.skillbox {
-	width: 45%;
+#certs > .cert:last-of-type {
+	padding-bottom: 0px;
+}
+
+.cert-badge {
+	height: 4em;
+	width: 4em;
+	margin-right: 1em;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.text-date {
+	font-size: 0.90em;
+	color: rgb(100,100,100);
+
+}
+
+#certs > #pd1-cert > .cert-badge {
+	background-image: url('./Platform-Developer-I_500x490px.png');
+}
+
+#certs > #jd1-cert > .cert-badge {
+	background-image: url('./JavaScript-Developer-I_500x490px.png');
 }
 
 .card {
@@ -88,8 +115,27 @@ h3 {
 	padding: 1em;
 }
 
-.card > h3 {
-	margin-top: 0px;
+.skillbox {
+	width: 45%;
+}
+
+#skills-and-certs {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: start;
+	justify-content: space-between;
+}
+
+#education {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+@media only screen {
+
+	.card > h3 {
+		margin-top: 0px;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -117,16 +163,57 @@ h3 {
 }
 
 @media print {
+	body {
+        font-size: 75%;
+        background-color: unset;
+    }
 
+	h3 {
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	h4 {
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	ul {
+		margin: 0px;
+	}
+    
 	#header-card {
 		padding: 0px;
+        margin: 0px;
 	}
+    
+    #header-card > .card-content {
+        border: none;
+    }
 
 	.card {
 		padding: 0px;
+        background-color: unset;
+		min-height: unset;
 	}
+    
+    .card > .card-content {
+        border-top: 1px solid lightgrey;
+        border-radius: 0.5em;
+        padding: 0.5em;
+    }
 
 	.container {
 		gap: 0px;
+        padding: 0px;
+        width: 100%;
+        margin: 0px;
+	}
+
+	.cert-badge {
+		height: unset;
+		width: unset;
+		margin-right: unset;
+		background: none;
 	}
 }
