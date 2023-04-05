@@ -21,7 +21,7 @@
 	<div class="container">
 		<div id="header-card" class="card">
 			<div class="card-content">
-				<div id="contact">
+				<div id="contact" class="text-align_left">
 					<ul>
 						<li>(317) 753-3369</li>
 						<li>Indianapolis, IN</li>
@@ -33,9 +33,9 @@
 					</ul>
 				</div>
 				<div id="header-name">
-					<h2>Tyler Manifold</h2>
+					<h1>Tyler Manifold</h1>
 				</div>
-				<div id="links">
+				<div id="links" class="text-align_right">
 					<ul>
 						<li>
 							<a href="https://tmanifold.github.io/resume" alt="Resume">tmanifold.github.io/resume</a>
@@ -71,9 +71,8 @@
 						
 					</div>
 					<div id="coursework">
-						<h4>Relevant Coursework</h4>
 						<p>
-							Data Structures, Operating Systems, Computer
+							<u>Highlighted Coursework: </u>Data Structures, Operating Systems, Computer
 							Architecture, Discrete Computational Structures, Systems
 							Programming, Internet of Things, Theory of Computation,
 							2D Game Design
@@ -84,12 +83,17 @@
 					<div id="skills" class="skillbox">
 						<h4>Skills</h4>
 						<p>
-							<u>Proficient:</u> Software development and debugging,
-							Hardware and software troubleshooting, C/C++, Python,
-							JavaScript/TypeScript, Linux Systems, Git
-						</p>
-						<p>
-							<u>Some experience:</u> Docker, Rust, Go, Angular
+							Asynchronous programming, 
+							C/C++, 
+							Docker, 
+							Git, 
+							JavaScript/TypeScript, 
+							Linux Systems, 
+							Python, 
+							Salesforce Platform (Apex, LWCs, Flows, SLDS), 
+							SFDX, 
+							Software development and debugging,
+							VS Code 
 						</p>
 					</div>
 					<div id="certs" class="skillbox">
@@ -121,98 +125,99 @@
 			</div>
 		</div>
 		<div class="card">
-			<h3>Academic Projects</h3>
-			<div class="card-content">
-				<h4>Wind Turbine Damage Detection System - Capstone</h4>
-				<ul>
-					<li>
+			<h3>Work History</h3>
+			<div class="card-content work-history">
+				<div class="work-history-item">
+					<strong>Associate Technical Consultant</strong> Salesforce &bullet;
+					<span class="text-date">July 2022 - May 2023</span> 
+					<div class="work-history-item_details">
+						<div class="work-history-item_info">
+							<u>Responsibilities:</u>
+							<p>
+								<ul>
+									<li>Develop full-stack solutions for the Salesforce platform using Apex, Lightning Web Components, and Flows.</li>
+									<li>Understand and write SOQL and SOSL queries to efficiently retrieve data from Salesforce.</li>
+									<li>Develop unit tests to meet code coverage standards and ensure proper functionality.</li>
+									<li>Leverage developer tools such as SFDX, VS Code, and Git to improve productivity.</li>
+									<li>Actively earn and maintain Salesforce Certifications</li>
+								</ul>
+							</p>
+						</div>
+						<div class="work-history-item_info">
+							<u>Project Contributions:</u>
+							<p>
+								Google Chrome Extension for internal contact lookup and management
+								<ul>
+									<li>Designed and implemented additional features, such as custom copy and crop functionality for profile images.</li>
+									<li>Contributed extensively to front-end by leading a push toward modern design standards.</li>
+									<li>Develop using modern tools and frameworks, such as Angular, WebPack, and TypeScript</li>
+								</ul>
+							</p>
+							<p>
+								Acted as an additional resource during a shadowing opportunity:
+								<ul>
+									<li>Worked with Senior QA engineers to conduct end-to-end Quality Assurance Testing</li>
+									<li>Worked with Senior Developers to help identify and resolve bugs</li>
+								</ul>
+								
+							</div>
+						</div>
+					</div>
+					<!-- <div class="work-history-item">
+						<strong>Advanced Repair Agent</strong> Best Buy | Geek Squad &bullet;
+						<span class="text-date">October 2015 - July 2022</span>
+						<ul>
+							<li>Perform hardware and software services for client devices such as desktop PCs, laptops, and iPhones. Services include software troubleshooting and fixes, as well as hardware repairs.</li>
+							<li>Use written communication skills to document repair notes by hand as well as internal service order management system.</li>
+						</ul>
+					</div> -->
+				</div>
+			</div>
+			<div class="card">
+				<h3>Academic Projects</h3>
+				<div class="card-content">
+					<h4>Wind Turbine Damage Detection System - Capstone</h4>
+					<p>
 						Worked in a team to develop a system capable of
 						detecting damage to windmills.
-					</li>
-					<li>
+						
 						Used Python and machine learning to train
 						classifiers for various damage types.
-					</li>
-					<li>
-						Developed an asynchronous Python program to automate
-						download of source images from a Google Cloud
-						Platform bucket, and provide the images as input to
-						the machine learning framework.
-					</li>
-					<li>
+						
 						Deployed the system on IUPUI High-Performance
 						Compute clusters to leverage multi-processing.
-					</li>
-				</ul>
-				<h4>Network Enabled Camera - Internet of Things</h4>
-				<ul>
-					<li>
+					</p>
+					<h4>Network Enabled Camera - Internet of Things</h4>
+					<p>
 						Worked with a teammate to design and develop a
 						wireless security camera using a Raspberry Pi.
-					</li>
-					<li>
+						
 						Developed client and server applications in Python
-						using the CoAP protocol plus websockets to
+						using the CoAP protocol and websockets to
 						facilitate communication with the device.
-					</li>
-				</ul>
-				<h4>Game Engine - 2D Game Design</h4>
-				<ul>
-					<li>
+					</p>
+					<h4>Game Engine - 2D Game Design</h4>
+					<p>
 						Independently developed a 2D game engine using pure
-						JavaScript and HTML5 canvas elements
-					</li>
-					<li>
+						JavaScript and HTML5 canvas elements.
+						
 						Implemented a 2D vector math library, collision
 						models, movement and transformation methods, and
 						scene management.
-					</li>
-				</ul>
-				<h4>SIC/XE Assembler - Systems Programming</h4>
-				<ul>
-					<li>
-						Worked in a team to developed most components of an
-						assembler for the Simplified Instructional Computer
-						with Extra Equipment (SIC/XE) using C++.
-					</li>
-					<li>
-						Produced a program capable of parsing input from a
-						file and assembling machine instructions according
-						to SIC/XE specification.
-					</li>
-				</ul>
+					</p>
+				</div>
 			</div>
+			
 		</div>
-		<div class="card">
-			<h3>Work History</h3>
-			<div class="card-content">
-				<p>
-					<strong>Associate Technical Consultant</strong> Salesforce &bullet;
-					Jul 2022 - May 2023
-					<ul>
-						<li>Develop full-stack solutions for the Salesforce platform using Apex and Lightning Web Components</li>
-						<li>Worked on a Google Chrome Extension for internal use. Developed additional features and contributed extensively to UI/UX design.</li>
-					</ul>
-				</p>
-				<p>
-					<strong>Advanced Repair Agent</strong> Best Buy | Geek Squad &bullet;
-					Oct 2015 - Jul 2022
-					<ul>
-						<li>Perform hardware and software services for client devices such as desktop PCs, laptops, and iPhones. Services include software troubleshooting and fixes, as well as hardware repairs.</li>
-						<li>Use written communication skills to document repair notes by hand as well as internal service order management system.</li>
-					</ul>
-				</p>
-			</div>
-		</div>
-	</div>
-	<script>
-		let links = document.querySelectorAll('a');
-		if (links) {
-			links.forEach(a => {
-				a.setAttribute('target', '_blank');
-				a.setAttribute('rel', 'noreferrer noopener');
-			});
-		}
-	</script>
-</body>
-</html>
+		<script>
+			let links = document.querySelectorAll('a');
+			if (links) {
+				links.forEach(a => {
+					a.setAttribute('target', '_blank');
+					a.setAttribute('rel', 'noreferrer noopener');
+				});
+			}
+		</script>
+	</body>
+	</html>
+	
