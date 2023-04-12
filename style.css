@@ -135,6 +135,7 @@ hr {
 	display: flex;
 	flex-flow: row nowrap;
 	margin-top: 0.5rem;
+	gap: 1rem;
 	/* border: 1px solid red; */
 }
 
